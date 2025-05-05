@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>城市管理列表</title>
+    <!--引入css样式文件-->
+    <link rel="stylesheet" href="/styles.css">
+    <!--导入axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="请输入城市名称（如：北京）">
+        <button class="add-Btn" id="addBtn"></button>
+      </div>
+      <!--新增的搜索提示区域-->
+      <div id="searchTip" class="empty-tip"></div>
+      <ul class="city-list" id="cityList"></ul>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
